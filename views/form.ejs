@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="/items"  class="form-horizontal" method="post"  role="form" enctype="multipart/form-data">                      
+                     <div class="form-group">
+                        <label for="itemCode" class="col-md-3 control-label">ItemCode</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" name="itemCode" placeholder="Enter item code">
+                        </div>
+                    </div>
+                      
+                    <div class="form-group">
+                         <label for="itemType" class="col-md-3 control-label">itemType </label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" name="itemType" placeholder="Email item type">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="itemTitle" class="col-md-3 control-label">itemTitle</label>
+                      <div class="col-md-9">
+                          <input type="text" class="form-control" name="itemTitle" placeholder="Enter itemTitle">
+                      </div>
+                  </div> 
+                    
+                    <div class="form-group">
+                        <label for="Category" class="col-md-3 control-label">Category</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" name="Category" placeholder="Enter Category">
+                        </div>
+                    </div>
+  
+                    <div class="form-group">
+                      <label for="itemImages" class="col-md-3 control-label">Item Image</label>
+                      <div class="col-md-9">
+                          <input type="file" class="form-control" name="itemImages">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="available" class="col-md-3 control-label">available</label>
+                    <div class="col-md-9">
+                        <input type="radio" class="form-control" name="available" placeholder="Enter Category">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="StartDate" class="col-md-3 control-label">StartDate</label>
+                    <div class="col-md-9">
+                        <input type="date" class="form-control" name="startDate" placeholder="Enter Date">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="endDate" class="col-md-3 control-label">EndDate</label>
+                    <div class="col-md-9">
+                        <input type="date" class="form-control" name="endDate" placeholder="Enter Date">
+                    </div>
+                </div>
+                    <div class="form-group">
+                        <!-- Button -->                                        
+                        <div class="col-md-offset-3 col-md-9">
+                        <input type="submit" name="submit" value="submit" class="btn btn-primary">   
+                        </div>
+                    </div>
+                    
+                </form>  
+                </div>
+                </div>
+                </div>
+
+            </body>
+            </html> 

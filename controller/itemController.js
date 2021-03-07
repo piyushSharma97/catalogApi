@@ -11,8 +11,9 @@ exports.searchItem = async function(req, res){
         let to =perPage * currentPage
         let itemCode = query.itemCode||""
         let itemTitle= query.itemTitle||""
+
         if(itemCode!=""&&itemTitle!=""){
-            var flterParameter={ $and:[itemCode,itemTitle]}
+            var flterParameter={ $and:[{itemCode},{itemTitle}]}
         }else if(itemCode!=""&& itemTitle==""){
             var flterParameter={itemCode:itemCode}
         }else if(itemCode==""&& itemTitle!=""){
@@ -20,7 +21,7 @@ exports.searchItem = async function(req, res){
         }else{
             var flterParameter={}
           }
-    
+
       itemModel.find(flterParameter)
         .sort()
         .skip((perPage * currentPage) - perPage)
